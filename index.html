@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arisa Miayaga-portfolio</title>
+        <meta name="description" content="Webデザイナー宮永ありさのポートフォリオサイトになります。">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="./image/favicon_logo.png">
+        <!-- css -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+        <header class="page-header">
+            <h1>
+                <a href="index.html"><img class="logo" src="image/favicon_logo.png" alt="宮永ありさのポートフォリオ-ホーム"></a>
+            </h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#skill">SKILL</a></li><!-- homeの指定の場所リンク -->
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="#contact">CONTACT</a></li><!-- homeの指定の場所リンク -->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- TOP -->
+        <section class="top">
+            <div class="top-img">
+                <div class="top-circle"></div>
+                <h1 class="top-name">ARISA<br>MIYANAGA</h1>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about">
+            <h2 class="title">ABOUT<br><span>私について</span></h2>
+            <div class="about-content">
+                <div class="about-img"></div>
+                <div class="about-text">
+                    <p>短大卒業後、事務職として約10年働いていますが、
+                        以前から興味のあった、Webデザインの仕事をしたいと思い、
+                        現在の仕事をしながら
+                        2023年12月からWebデザイナーになるため勉強中です。
+                        <br> <br>
+                        湘南出身で、海が大好きです！が、泳げません。(笑)
+                        海に入るというより、眺めることが好きです。
+                        たまに、自転車で江の島へ行くこともあります。</p></div>
+                <button class="btn-about" onclick="location.href='about.html'">MORE</button>
+            </div><!-- about-content -->
+        </section><!-- ABOUT -->
+
+        <!-- SKILL -->
+        <section class="skill"><a name="skill"></a>
+            <div id="skill" class="skill-wrapper">
+                <h2 class="title">SKILL<br><span>できること</span></h2>
+                <div class="skill-content">
+                    <div class="design">
+                        <p>デザイン</p>
+                        <div class="design-img"><img src="./image/design-icon.png" alt>
+                            <p class="tool">使用ツール：WIX/Word Press/Figma</p>
+                        </div>
+                    </div><!-- design -->
+                    <div class="coding">
+                        <p>コーディング</p>
+                        <div class="coding-img"><img src="./image/program-icon.png" alt>
+                            <p class="tool">使用ツール：HTML/CSS</p>
+                        </div></div>
+                </div><!-- skill-content -->
+            </div> <!-- skill-wrapper -->
+        </section><!-- SKILL -->
+
+        <!-- WORKS -->
+        <section class="works">
+            <div class="works-content">
+                <h2 class="title">WORKS<br><span>制作物</span></h2>
+                <div class="box-container">
+                    <div class="box-wrapper">
+                        <a href="https://1990ari16.wixsite.com/my-site-2">
+                            <img class="box" src="./image/web coach design.jpg" alt="WEB COACH-site"></a>
+                        <a href="https://1990ari16.wixsite.com/co-working">
+                            <img class="box" src="./image/co working space.jpg" alt="co-working-site"></a>
+                        <a href="https://1990ari16.wixsite.com/my-site-1">
+                            <img class="box" src="./image/経営コンサルティング.jpg" alt="consulting-site"></a>
+                    </div><!-- box-wrapper -->
+                    <button class="btn-works" onclick="location.href='works.html'">LIST</button>
+                </div><!-- box-container -->
+            </div><!-- works-content -->
+        </section><!-- WORKS -->
+
+        <!-- CONTACT -->
+        <section class="contact"><a name="contact"></a>
+            <div id="contact" class="contact-wrpper">
+                <h2 class="title">CONTACT<br><span>お問い合わせ</span></h2>
+            </div>
+            <dvi class="contact-content">
+                <div class="contact-icon"><img src="./image/contact-icon.png" alt="dolphin-icon">
+                    <p class="contact-text">ご覧いただきありがとうございます。
+                        <br>ご連絡は、下記フォームをご利用下さい。</p>
+                </div>
+                <form action="#">
+                    <div class="form-wrapper">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="your-name">
+                        <div>
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="your-email">
+                        </div>
+                        <div>
+                            <label for="message">お問い合わせ内容</label>
+                            <textarea id="message" name="your-message"></textarea>
+                        </div>
+                        <input type="submit" class="button" value="送信">
+                    </div>
+                </form>
+            </dvi>
+
+        </section><!-- CONTACT -->
+
+        <a class="top-return" href="index.html" alt="トップへ戻る">TOP ↑</a>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="wrapper">
+                <p><small>&copy; 2024 Arisa Miyanaga</small></p>
+            </div>
+        </footer>
+
+    </body>
+</html>
